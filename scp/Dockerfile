@@ -23,4 +23,4 @@ RUN ./steamcmd.sh +force_install_dir /home/steam/scp +login anonymous +app_updat
 
 COPY "SCP Secret Laboratory" "/home/steam/.config/SCP Secret Laboratory"
 
-CMD ["/bin/sh", "-c", "/home/steam/scp/ LocalAdmin 7777"]
+CMD ["/bin/sh", "-c", "/home/steam/scp/LocalAdmin 7777"]
