@@ -17,13 +17,10 @@ RUN apt-get install -y mono-devel
 
 RUN rm -rf /tmp/*
 
-COPY entrypoint.sh /home/steam/entrypoint.sh
-RUN chmod +x /home/steam/entrypoint.sh
-
 RUN su steam
 
 RUN ./steamcmd.sh +force_install_dir /home/steam/scp +login anonymous +app_update 996560 +app_update 996560 validate +quit
 
 EXPOSE 7777
 
-CMD ["/home/steam/entrypoint.sh"]
+CMD ["/bin/sh", "-c", "/home/steam/scp/LocalAdmin 7777"]
