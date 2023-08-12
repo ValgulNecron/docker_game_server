@@ -1,1 +1,1 @@
-# docker_game_server
+This repo contain the docker file and the compose file for certain game server.
