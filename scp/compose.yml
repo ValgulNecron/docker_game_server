@@ -10,4 +10,5 @@ services:
       - "7777:7777"
     volumes:
       - "./config:/home/steam/.config/SCP Secret Laboratory/config"
+      - "./config:/root/.config/SCP Secret Laboratory/config"
     tty: true
