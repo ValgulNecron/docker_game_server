@@ -25,7 +25,7 @@ late_join_time: 0
 
 ## Player Info Range ##
 # This controls the default range that the player information text appears on clients.
-#INVALID FLOAT - player_info_range: 10 # Default is 10.
+player_info_range: 10 # Default is 10.
 
 ## Respawn ticket system settings ##
 
