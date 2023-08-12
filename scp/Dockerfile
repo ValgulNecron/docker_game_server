@@ -34,4 +34,4 @@ RUN /usr/bin/expect -c ' \
 
 EXPOSE 7777
 
-CMD ["/home/steam/scp/LocalAdmin 7777"]
+CMD ["/bin/sh", "-c", "/home/steam/scp/LocalAdmin 7777"]
