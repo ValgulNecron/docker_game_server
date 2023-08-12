@@ -18,8 +18,6 @@ RUN apt-get install -y mono-devel
 
 RUN rm -rf /tmp/*
 
-RUN su steam
-
 RUN ./steamcmd.sh +force_install_dir /home/steam/scp +login anonymous +app_update 996560 +app_update 996560 validate +quit
 
 EXPOSE 7777
