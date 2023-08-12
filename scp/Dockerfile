@@ -22,16 +22,6 @@ RUN su steam
 
 RUN ./steamcmd.sh +force_install_dir /home/steam/scp +login anonymous +app_update 996560 +app_update 996560 validate +quit
 
-RUN /usr/bin/expect -c ' \
-  while { true } { \
-    spawn /home/steam/scp/LocalAdmin 7777; \
-    expect "Do you accept the EULA? [yes/no]" { send "yes\r" }; \
-    expect "Do you want to edit that configuration? [edit/keep]:" { send "keep\r" }; \
-    expect "Do you want to save the configuration only for THIS server (on port 7777 or should it become a GLOBAL configuration (default one for all future servers - servers not configured yet)? [this/global]:" { send "global\r" }; \
-    expect eof; \
-    close \
-  }'
-
 EXPOSE 7777
 
 CMD ["/bin/sh", "-c", "/home/steam/scp/LocalAdmin 7777"]
