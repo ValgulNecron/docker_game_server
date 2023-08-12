@@ -1,4 +1,4 @@
-FROM steamcmd:root
+FROM cm2network/steamcmd:root
 LABEL authors="valgul"
 
 RUN apt-get update && apt-get install -y \
