@@ -21,4 +21,6 @@ RUN su steam
 
 RUN ./steamcmd.sh +force_install_dir /home/steam/scp +login anonymous +app_update 996560 +app_update 996560 validate +quit
 
+EXPOSE 7777
+
 CMD ["/bin/sh", "-c", "/home/steam/scp/LocalAdmin 7777"]
