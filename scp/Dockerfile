@@ -24,6 +24,6 @@ RUN ./steamcmd.sh +force_install_dir /home/steam/scp +login anonymous +app_updat
 
 EXPOSE 7777
 
-WORKDIR /home/steam/scp/
+WORKDIR /home/steam/scp
 
 CMD ["/bin/sh", "-c", "/home/steam/scp/LocalAdmin 7777"]
