@@ -26,4 +26,4 @@ RUN ./steamcmd.sh +force_install_dir /home/steam/scp +login anonymous +app_updat
 
 EXPOSE 7777
 
-CMD ["../entrypoint.sh"]
+CMD ["/home/steam/entrypoint.sh"]
