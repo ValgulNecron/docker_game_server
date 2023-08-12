@@ -17,7 +17,7 @@ RUN apt-get install -y mono-devel
 
 RUN rm -rf /tmp/*
 
-COPY entrypoint.sh /home/steam/entrypoint.sh
+COPY ./entrypoint.sh /home/steam/entrypoint.sh
 RUN chmod +x /home/steam/entrypoint.sh
 
 RUN su steam
