@@ -24,9 +24,9 @@ RUN curl -L -o Exiled.tar.gz https://github.com/Exiled-Team/EXILED/releases/down
 
 RUN tar -xzvf Exiled.tar.gz
 
-RUN mv /home/steam/exiled/Assembly-CSharp.dll /home/steam/scp/SCPSL_Data/Managed/
+RUN mv /home/steam/Exiled/Assembly-CSharp.dll /home/steam/scp/SCPSL_Data/Managed/
 
-RUN mkdir -p ~/.config && mv /home/steam/exiled ~/.config/EXILED
+RUN mkdir -p ~/.config && mv /home/steam/Exiled/EXILED ~/.config/EXILED
 
 WORKDIR /home/steam/scp/
 
