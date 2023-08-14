@@ -22,7 +22,8 @@ RUN ./steamcmd.sh +force_install_dir /home/steam/scp +login anonymous +app_updat
 
 RUN curl -L -o Exiled.tar.gz https://github.com/Exiled-Team/EXILED/releases/download/7.2.0/Exiled.tar.gz
 
-RUN tar -xzvf Exiled.tar.gz
+RUN mkdir -p /home/steam/Exiled \
+    && tar -xzvf Exiled.tar.gz -C /home/steam/Exiled \
 
 RUN mv /home/steam/Exiled/Assembly-CSharp.dll /home/steam/scp/SCPSL_Data/Managed/
 
