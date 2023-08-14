@@ -27,9 +27,9 @@ RUN mkdir -p /home/steam/Exiled \
 
 RUN mkdir ~/.config/ && mkdir ~/.config/SCP\ Secret\ Laboratory/
 
-RUN mv /home/steam/Exiled/SCP\ Secret\ Laboratory/ ~/.config/SCP\ Secret\ Laboratory/
+RUN mv /home/steam/Exiled/SCP\ Secret\ Laboratory/* ~/.config/SCP\ Secret\ Laboratory/
 
-RUN mkdir -p ~/.config && mv /home/steam/Exiled/EXILED ~/.config/SCP\ Secret\ Laboratory/EXILED
+RUN mkdir -p ~/.config && mv /home/steam/Exiled/EXILED/ ~/.config/SCP\ Secret\ Laboratory/EXILED
 
 WORKDIR /home/steam/scp/
 
