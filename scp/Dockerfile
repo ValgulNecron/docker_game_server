@@ -26,7 +26,7 @@ RUN RUN tar -xzvf Exiled.tar.gz
 
 RUN mv /home/steam/exiled/Assembly-CSharp.dll /home/steam/scp/SCPSL_Data/Managed/
 
-
+RUN mkdir -p ~/.config && mv /home/steam/exiled ~/.config/EXILED
 
 WORKDIR /home/steam/scp/
 
