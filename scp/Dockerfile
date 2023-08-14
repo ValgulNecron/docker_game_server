@@ -22,7 +22,7 @@ RUN ./steamcmd.sh +force_install_dir /home/steam/scp +login anonymous +app_updat
 
 RUN curl -L -o Exiled.Installer-Linux https://github.com/Exiled-Team/EXILED/releases/download/7.2.0/Exiled.Installer-Linux
 
-RUN .\Exiled.Installer-Linux -p /home/steam/scp/
+RUN ./Exiled.Installer-Linux -p /home/steam/scp/
 
 EXPOSE 7777
 
