@@ -11,3 +11,4 @@ services:
       - "./config:/home/steam/.config/SCP Secret Laboratory/config"
       - "./config:/root/.config/SCP Secret Laboratory/config"
     tty: true
+    stdin_open: true
