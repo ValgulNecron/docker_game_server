@@ -20,13 +20,15 @@ RUN rm -rf /tmp/*
 
 RUN ./steamcmd.sh +force_install_dir /home/steam/scp +login anonymous +app_update 996560 +app_update 996560 validate +quit
 
+RUN curl -L -o https://github.com/Exiled-Team/EXILED/releases/download/7.2.0/Exiled.tar.gz
+
+RUN RUN tar -xzvf Exiled.tar.gz
+
+RUN mv /home/steam/exiled/Assembly-CSharp.dll /home/steam/scp/SCPSL_Data/Managed/
+
+
+
 WORKDIR /home/steam/scp/
-
-RUN curl -L -o Exiled.Installer-Linux https://github.com/Exiled-Team/EXILED/releases/download/7.2.0/Exiled.Installer-Linux
-
-RUN chmod +x ./Exiled.Installer-Linux
-
-RUN ./Exiled.Installer-Linux
 
 EXPOSE 7777
 

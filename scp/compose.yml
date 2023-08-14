@@ -8,7 +8,7 @@ services:
     restart: unless-stopped
     network_mode: host  # Use host network
     volumes:
-      - "./config:/home/steam/.config/SCP Secret Laboratory/config"
       - "./config:/root/.config/SCP Secret Laboratory/config"
+      - "./plugins:/root/.config/EXILED/Plugins"
     tty: true
     stdin_open: true
