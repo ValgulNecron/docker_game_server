@@ -10,5 +10,6 @@ services:
     volumes:
       - "./config:/root/.config/SCP Secret Laboratory/config"
       - "./plugins:/root/.config/EXILED/Plugins"
+      - "./plugins_config:/root/.config/EXILED/Configs"
     tty: true
     stdin_open: true
