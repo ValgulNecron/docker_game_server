@@ -20,7 +20,7 @@ RUN rm -rf /tmp/*
 
 RUN ./steamcmd.sh +force_install_dir /home/steam/scp +login anonymous +app_update 996560 +app_update 996560 validate +quit
 
-WORKDIR /home/steam/scp
+WORKDIR /home/steam/scp/
 
 RUN curl -L -o Exiled.Installer-Linux https://github.com/Exiled-Team/EXILED/releases/download/7.2.0/Exiled.Installer-Linux
 
@@ -29,7 +29,5 @@ RUN chmod +x ./Exiled.Installer-Linux
 RUN ./Exiled.Installer-Linux
 
 EXPOSE 7777
-
-WORKDIR /home/steam/scp
 
 CMD ["/bin/sh", "-c", "/home/steam/scp/LocalAdmin 7777"]
