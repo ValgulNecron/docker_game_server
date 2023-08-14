@@ -20,7 +20,7 @@ RUN rm -rf /tmp/*
 
 RUN ./steamcmd.sh +force_install_dir /home/steam/scp +login anonymous +app_update 996560 +app_update 996560 validate +quit
 
-RUN curl -L -o Exiled.tar.gz https://github.com/Exiled-Team/EXILED/releases/download/latest/Exiled.tar.gz
+RUN curl -L -o Exiled.tar.gz https://github.com/Exiled-Team/EXILED/releases/latest/download/Exiled.tar.gz
 
 RUN mkdir -p /home/steam/Exiled \
     && tar -xzvf Exiled.tar.gz -C /home/steam/Exiled
