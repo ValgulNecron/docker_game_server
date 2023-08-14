@@ -25,6 +25,8 @@ RUN curl -L -o Exiled.tar.gz https://github.com/Exiled-Team/EXILED/releases/down
 RUN mkdir -p /home/steam/Exiled \
     && tar -xzvf Exiled.tar.gz -C /home/steam/Exiled
 
+RUN mkdir ~/.config/SCP\ Secret\ Laboratory/
+
 RUN mv /home/steam/Exiled/SCP\ Secret\ Laboratory/ ~/.config/SCP\ Secret\ Laboratory/
 
 RUN mkdir -p ~/.config && mv /home/steam/Exiled/EXILED ~/.config/SCP\ Secret\ Laboratory/EXILED
