@@ -1,9 +1,7 @@
 version: '3'
 services:
   scp:
-    build:
-      context: ..
-      dockerfile: Dockerfile
+    image: valgul/scp_exiled
     container_name: scp
     restart: unless-stopped
     network_mode: host  # Use host network

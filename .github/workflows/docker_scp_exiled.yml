@@ -32,6 +32,6 @@ jobs:
           context: ./scp/exiled
           push: true
           platforms: linux/amd64
-          tags: valgul/scp:dev
+          tags: valgul/scp_exiled
           cache-from: type=gha
           cache-to: type=gha,mode=max
