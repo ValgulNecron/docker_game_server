@@ -3,7 +3,7 @@ name: Build & Publish SCP Exiled Docker Image
 on:
   push:
     branches:
-      - dev
+      - master
   workflow_dispatch:
 
 concurrency:
