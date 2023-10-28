@@ -2,14 +2,12 @@ version: '3'
 services:
   scp:
     build:
-      context: .
+      context: ..
       dockerfile: Dockerfile
     container_name: scp
     restart: unless-stopped
     network_mode: host  # Use host network
     volumes:
       - "./config:/root/.config/SCP Secret Laboratory/config"
-      - "./plugins:/root/.config/EXILED/Plugins"
-      - "./plugins_config:/root/.config/EXILED/Configs"
     tty: true
     stdin_open: true
