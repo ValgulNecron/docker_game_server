@@ -1,0 +1,12 @@
+version: '3'
+services:
+  scp:
+    image: valgul/palworld
+    container_name: palworld
+    restart: unless-stopped
+    network_mode: host  # Use host network
+    volumes:
+      - "./config:/game/Pal/Saved/Config/LinuxServer/"
+      - "./save_file:/game/Pal/Saved/SaveGames"
+    tty: true
+    stdin_open: true
