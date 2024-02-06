@@ -19,9 +19,9 @@ RUN apt-get update \
     && apt-get clean \
     && rm -rf /tmp/*
 
-WORKDIR /home/steam/steamcmd
-
 RUN mkdir /game/
+
+RUN chmod 777 /game
 
 RUN ./steamcmd.sh +force_install_dir /game/ +login anonymous +app_update 2394010 validate +quit
 
