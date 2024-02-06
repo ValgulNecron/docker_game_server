@@ -23,7 +23,7 @@ WORKDIR /home/steam/steamcmd
 
 RUN mkdir /game/
 
-RUN ./steamcmd +force_install_dir /game/ +login anonymous +app_update 2394010 validate +quit
+RUN ./steamcmd.sh +force_install_dir /game/ +login anonymous +app_update 2394010 validate +quit
 
 WORKDIR /game/
 
