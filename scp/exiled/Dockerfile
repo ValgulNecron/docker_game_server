@@ -14,7 +14,11 @@ RUN echo "deb [signed-by=/usr/share/keyrings/mono-official-archive-keyring.gpg] 
 
 RUN apt-get update && apt-get install -y mono-devel && apt-get clean && rm -rf /tmp/*
 
-RUN mkdir /game/ && ./steamcmd.sh +force_install_dir /game/ +login anonymous +app_update 996560 validate +quit
+RUN mkdir /game/
+
+RUN chmod 777 /game
+
+RUN ./steamcmd.sh +force_install_dir /game/ +login anonymous +app_update 996560 validate +quit
 
 RUN curl -L -o Exiled.tar.gz https://github.com/Exiled-Team/EXILED/releases/latest/download/Exiled.tar.gz
 

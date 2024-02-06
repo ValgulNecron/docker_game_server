@@ -17,6 +17,7 @@ RUN apt-get update \
     && rm -rf /tmp/*
 
 RUN mkdir ~/.config/ && mkdir ~/.config/SCP\ Secret\ Laboratory/ && mkdir /game/
+RUN chmod 777 /game
 
 RUN ./steamcmd.sh +force_install_dir /game/ +login anonymous +app_update 996560 validate +quit
 
