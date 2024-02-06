@@ -11,5 +11,5 @@ services:
     tty: true
     stdin_open: true
     environment:
-      - PORT=46753
+      - PORT=8211
       - PLAYER=32
