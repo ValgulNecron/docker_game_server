@@ -1,6 +1,6 @@
 version: '3'
 services:
-  scp:
+  palworld:
     image: valgul/palworld
     container_name: palworld
     restart: unless-stopped
