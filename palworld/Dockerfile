@@ -31,4 +31,8 @@ RUN mkdir -p ~/.steam/sdk64/ \
 steamcmd +login anonymous +app_update 1007 +quit \
 cp ~/Steam/steamapps/common/Steamworks\ SDK\ Redist/linux64/steamclient.so ~/.steam/sdk64/
 
+RUN chmod 777 /game
+
+USER steam
+
 CMD ["/bin/sh", "-c", "/game/PalServer.sh -port=$PORT -players=$PLAYER -useperfthreads -NoAsyncLoadingThread -UseMultithreadForDS"]
