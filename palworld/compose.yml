@@ -10,3 +10,6 @@ services:
       - "./save_file:/game/Pal/Saved/SaveGames"
     tty: true
     stdin_open: true
+    environment:
+      - PORT=46753
+      - PLAYER=32
