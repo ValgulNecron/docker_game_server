@@ -31,7 +31,7 @@ RUN mv /home/steam/Exiled/SCP\ Secret\ Laboratory/* ~/.config/SCP\ Secret\ Labor
 
 RUN mkdir -p ~/.config && mv /home/steam/Exiled/EXILED/ ~/.config/SCP\ Secret\ Laboratory/EXILED
 
-WORKDIR /home/steam/scp/
+WORKDIR /game/
 
 EXPOSE 7777
 
