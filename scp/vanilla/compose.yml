@@ -7,5 +7,7 @@ services:
     network_mode: host  # Use host network
     volumes:
       - "./config:/root/.config/SCP Secret Laboratory/config"
+    environment:
+      - TZ=Europe/Paris
     tty: true
     stdin_open: true
