@@ -5,6 +5,8 @@ services:
     container_name: scp
     restart: unless-stopped
     network_mode: host  # Use host network
+    environment:
+      - TZ=Europe/Paris
     volumes:
       - "./config:/root/.config/SCP Secret Laboratory/config"
       - "./plugins:/root/.config/EXILED/Plugins"
