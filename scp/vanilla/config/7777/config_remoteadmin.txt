@@ -1,10 +1,10 @@
 #Let's assign roles (you can modify them and create custom roles below)
 #UserID format is SteamId64Here@steam, DiscordUserIDHere@discord, etc...
 Members:
- - SomeSteamId64@steam: owner
- - SomeOtherSteamId64@steam: admin
- - AnotherSteamId64@steam: admin
- - SomeDiscordUserId@discord: moderator
+ - 765611992990640524@steam: takina
+ - 76561198096841036@steam: takina
+ - 76561198969675003@steam: 002
+ - 76561199365151242@steam: 002
 
 #Should Secret Lab development staff be able to use the Remote Admin?
 enable_staff_access: false
@@ -29,65 +29,57 @@ enable_banteam_bypass_geoblocking: true
 #kick_power is the power for kicking and banning that the member of this group has (can be from 0 to 255)
 #required_kick_power is the required kick power to kick or ban a member of this group (can be from 0 to 255)
 
-owner_badge: SERVER OWNER
-owner_color: red
-owner_cover: true
-owner_hidden: false
-owner_kick_power: 255
-owner_required_kick_power: 255
+takina_badge: takina
+takina_color: red
+takina_cover: true
+takina_hidden: false
+takina_kick_power: 255
+takina_required_kick_power: 255
 
-admin_badge: ADMIN
-admin_color: red
-admin_cover: true
-admin_hidden: false
-admin_kick_power: 1
-admin_required_kick_power: 2
-
-moderator_badge: MODERATOR
-moderator_color: silver
-moderator_cover: true
-moderator_hidden: false
-moderator_kick_power: 0
-moderator_required_kick_power: 1
+002_badge: 002
+002_color: red
+002_cover: true
+002_hidden: false
+002_kick_power: 255
+002_required_kick_power: 255
 
 #And add them to the roles list
 Roles:
- - owner
- - admin
- - moderator
+ - takina
+ - 002
 
 #Let's setup permissions for roles
 #More info can be found on our wiki: https://en.scpslgame.com/index.php/Docs:Permissions
 Permissions:
- - KickingAndShortTermBanning: [owner, admin, moderator]
- - BanningUpToDay: [owner, admin, moderator]
- - LongTermBanning: [owner, admin]
- - ForceclassSelf: [owner, admin, moderator]
- - ForceclassToSpectator: [owner, admin, moderator]
- - ForceclassWithoutRestrictions: [owner, admin]
- - GivingItems: [owner, admin]
- - WarheadEvents: [owner, admin, moderator]
- - RespawnEvents: [owner, admin]
- - RoundEvents: [owner, admin, moderator]
- - SetGroup: [owner]
- - GameplayData: [owner, admin]
- - Overwatch: [owner, admin, moderator]
- - FacilityManagement: [owner, admin, moderator]
- - PlayersManagement: [owner, admin]
- - PermissionsManagement: [owner]
- - ServerConsoleCommands: []
- - ViewHiddenBadges: [owner, admin, moderator]
- - ServerConfigs: [owner]
- - Broadcasting: [owner, admin, moderator]
- - PlayerSensitiveDataAccess: [owner, admin, moderator]
- - Noclip: [owner, admin]
- - AFKImmunity: [owner, admin]
- - AdminChat: [owner, admin, moderator]
- - ViewHiddenGlobalBadges: [owner, admin, moderator]
- - Announcer: [owner, admin]
- - Effects: [owner, admin]
- - FriendlyFireDetectorImmunity: [owner, admin, moderator]
- - FriendlyFireDetectorTempDisable: [owner, admin]
+ - KickingAndShortTermBanning: [takina, 002]
+ - BanningUpToDay: [takina, 002]
+ - LongTermBanning: [takina, 002]
+ - ForceclassSelf: [takina, 002]
+ - ForceclassToSpectator: [takina, 002]
+ - ForceclassWithoutRestrictions: [takina, 002]
+ - GivingItems: [takina, 002]
+ - WarheadEvents: [takina, 002]
+ - RespawnEvents: [takina, 002]
+ - RoundEvents: [takina, 002]
+ - SetGroup: [takina, 002]
+ - GameplayData: [takina, 002]
+ - Overwatch: [takina, 002]
+ - FacilityManagement: [takina, 002]
+ - PlayersManagement: [takina, 002]
+ - PermissionsManagement: [takina, 002]
+ - ServerConsoleCommands: [takina, 002]
+ - ViewHiddenBadges: [takina, 002]
+ - ServerConfigs: [takina, 002]
+ - Broadcasting: [takina, 002]
+ - PlayerSensitiveDataAccess: [takina, 002]
+ - Noclip: [takina, 002]
+ - AFKImmunity: [takina, 002]
+ - AdminChat: [takina, 002]
+ - ViewHiddenGlobalBadges: [takina, 002]
+ - Announcer: [takina, 002]
+ - Effects: [takina, 002]
+ - FriendlyFireDetectorImmunity: [takina, 002]
+ - FriendlyFireDetectorTempDisable: [takina, 002]
 
 #Set to "none" in order to disable password.
 #WE DON'T RECOMMEND USING PASSWORD!!!
