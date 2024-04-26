@@ -35,4 +35,4 @@ WORKDIR /home/steam/scp/
 
 EXPOSE 7777
 
-CMD ["/bin/sh", "-c", "/home/steam/scp/LocalAdmin 7777"]
+CMD ["/bin/sh", "-c", "/game/LocalAdmin 7777"]
