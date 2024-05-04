@@ -30,14 +30,14 @@ enable_banteam_bypass_geoblocking: true
 #required_kick_power is the required kick power to kick or ban a member of this group (can be from 0 to 255)
 
 takina_badge: takina
-takina_color: red
+takina_color: deep_pink
 takina_cover: true
 takina_hidden: false
 takina_kick_power: 255
 takina_required_kick_power: 255
 
 002_badge: 002
-002_color: red
+002_color: pink
 002_cover: true
 002_hidden: false
 002_kick_power: 255
