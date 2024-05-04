@@ -1,11 +1,11 @@
 #Server main settings
-server_name: My Server Name
+server_name: Shinda server
 #default - uses server_name
 player_list_title: default
 player_list_title_rate: default
 serverinfo_pastebin_id: 7wV681fT
 server_ip: auto
-max_players: 20
+max_players: 50
 server_tickrate: 60
 use_reserved_slots: true
 lobby_waiting_time: default
@@ -19,7 +19,7 @@ maximum_MTF_time_to_spawn: 350
 maximum_MTF_respawn_amount: 15
 maximum_CI_respawn_amount: 15
 priority_mtf_respawn: true
-use_crypto_rng: false
+use_crypto_rng: true
 team_respawn_queue: default
 late_join_time: 0
 
