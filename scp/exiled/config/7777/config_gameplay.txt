@@ -79,7 +79,7 @@ stamina_balance_regen_cd: 1
 # How fast the stamina regenerates.
 # This is a multiplier for the default setting,
 # which is based on a curve - not a specific value.
-stamina_balance_regen_speed: 1
+stamina_balance_regen_speed: 10
 
 #Random-stuff settings (-1: random)
 server_forced_class: -1
@@ -89,12 +89,12 @@ map_seed: -1
 intercom_cooldown: 120
 intercom_max_speech_time: 20
 auto_round_restart_time: 10
-friendly_fire: false
+friendly_fire: true
 friendly_fire_multiplier: 0.4
 warhead_tminus_start_duration: 90
 lock_gates_on_countdown: true
 isolate_zones_on_countdown: false
-open_doors_on_countdown: true
+open_doors_on_countdown: false
 keep_items_after_escaping: true
 allow_playing_as_tutorial: true
 disable_decontamination: false
@@ -102,10 +102,10 @@ disable_decontamination: false
 no_holidays: false
 allow_disarmed_interaction: false
 914_mode: default
-sinkhole_slow_amount: 30
-sinkhole_spawn_chance: 0
+sinkhole_slow_amount: 60
+sinkhole_spawn_chance: 0.5
 disconnect_drop: true
-end_round_on_one_player: false
+end_round_on_one_player: true
 cuffed_escapee_change_team: true
 pd_exit_count: 2
 
@@ -122,7 +122,7 @@ spawn_protect_prevent_all: default
 spawn_protect_team: [1, 2]
 
 #Auto Event settings
-auto_warhead_start_minutes: 0
+auto_warhead_start_minutes: 30
 auto_warhead_lock: true
 auto_warhead_broadcast_enabled: true
 auto_warhead_broadcast_message: Alpha Warhead is being automatically detonated and cannot be cancelled.
@@ -183,19 +183,19 @@ userid_ratelimit_window: 5
 # - Item category limits -
 # Values of 0 are NOT unlimited and will prevent item pickups of that type entirely!
 # The inventory can hold a max of 8 items, so a limit of 8 is effectively unlimited.
-limit_category_grenade: default
-limit_category_keycard: default
-limit_category_medical: default
-limit_category_scpitem: default
-limit_category_firearm: default
+limit_category_grenade: 8
+limit_category_keycard: 8
+limit_category_medical: 8
+limit_category_scpitem: 8
+limit_category_firearm: 8
 
 # - Ammo type limits -
 # Values from 1 to 65k.
-limit_ammo12ga: default
-limit_ammo556x45: default
-limit_ammo44cal: default
-limit_ammo762x39: default
-limit_ammo9x19: default
+limit_ammo12ga: 65k
+limit_ammo556x45: 65k
+limit_ammo44cal: 65k
+limit_ammo762x39: 65k
+limit_ammo9x19: 65k
 
 #Friendly fire punishment
 #Action is performed if someone either kills enough teammates OR deals enough damage to teammates.
