@@ -191,11 +191,11 @@ limit_category_firearm: 8
 
 # - Ammo type limits -
 # Values from 1 to 65k.
-limit_ammo12ga: 65k
-limit_ammo556x45: 65k
-limit_ammo44cal: 65k
-limit_ammo762x39: 65k
-limit_ammo9x19: 65k
+limit_ammo12ga: 65000
+limit_ammo556x45: 65000
+limit_ammo44cal: 65000
+limit_ammo762x39: 65000
+limit_ammo9x19: 65000
 
 #Friendly fire punishment
 #Action is performed if someone either kills enough teammates OR deals enough damage to teammates.
